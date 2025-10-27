@@ -4,7 +4,7 @@ export default function ShimmerButton({ href, children, className = "", ...rest 
   return (
     <a
       href={href}
-      className={`relative inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full font-semibold text-white focus-ring-gradient transition-all duration-300 will-change-transform bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-purple-600 hover:to-indigo-500 hover:scale-[1.03] hover:-translate-y-0.5 shadow-lg hover:shadow-2xl ${className}`}
+      className={`relative inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full font-semibold text-white transition-all duration-300 will-change-transform bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-purple-600 hover:to-indigo-500 hover:scale-[1.03] hover:-translate-y-0.5 shadow-lg hover:shadow-2xl focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-indigo-400/60 ${className}`}
       {...rest}
     >
       {/* Soft glow */}
@@ -15,4 +15,3 @@ export default function ShimmerButton({ href, children, className = "", ...rest 
     </a>
   );
 }
-

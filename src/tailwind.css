@@ -104,12 +104,6 @@
 }
 .slow-shimmer { animation: shimmer 3.5s linear infinite; }
 
-/* Fancy focus ring */
-.focus-ring-gradient:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 4px rgba(99,102,241,.35), 0 0 0 8px rgba(168,85,247,.25);
-}
-
 /* Reveal utility for IntersectionObserver hook */
 .reveal { opacity: 0; transform: translateY(16px) scale(.995); }
 .reveal.is-visible { opacity: 1; transform: translateY(0) scale(1); transition: transform .6s cubic-bezier(.22,1,.36,1), opacity .6s cubic-bezier(.22,1,.36,1); }
@@ -147,8 +141,12 @@
 .neon-heading { color: #e0f2fe; letter-spacing: .02em; text-shadow: 0 0 18px rgba(34,211,238,.35); }
 
 .neon-btn {
-  @apply relative inline-flex items-center justify-center rounded-xl px-8 py-3 font-semibold text-cyan-50 focus-ring-gradient transition-all duration-300 overflow-hidden;
+  @apply relative inline-flex items-center justify-center rounded-xl px-8 py-3 font-semibold text-cyan-50 transition-all duration-300 overflow-hidden;
   background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+}
+.neon-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(34,211,238,.35), 0 0 0 8px rgba(59,130,246,.25);
 }
 .neon-btn:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 10px 30px rgba(56,189,248,.35); }
 .neon-btn:active { transform: translateY(0) scale(.99); }
