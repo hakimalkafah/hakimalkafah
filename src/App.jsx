@@ -53,7 +53,7 @@ const App = () => {
         <div className="container mx-auto px-6 md:px-10 text-center space-y-6">
           <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-400/30 text-cyan-200 text-sm animate-[var(--animate-fade-down)]" style={{ animationDelay: '40ms' }}>
             <span className="size-1.5 rounded-full bg-cyan-400 animate-[var(--animate-glow)]" />
-            Futuristic Portfolio
+            Portfolio
           </div>
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight neon-heading animate-[var(--animate-fade-down)]" style={{ animationDelay: '120ms' }}>Hakim Alkafah</h1>
           <p className="text-xl md:text-2xl neon-subtle animate-[var(--animate-fade-down)]" style={{ animationDelay: '220ms' }}>Full-Stack Software Engineer | Systems | Cloud | DevOps</p>
